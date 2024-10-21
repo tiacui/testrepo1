@@ -32,10 +32,10 @@ jobs:
     - name: Copy files via SSH
       uses: appleboy/scp-action@v0.1.1
       with:
-        host: 13.237.250.120
+        host: 131.237.250.120
         username: ${{ secrets.SPL_SERVER_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        source: "."
+        source: "./test.php"
         target: "/var/www/html"
 
     - name: Restart Apache
