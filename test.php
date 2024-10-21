@@ -1,5 +1,5 @@
 <?php
 
-echo "test from test.php...aaabbb";
+echo "test from test.php...aaabbbicc";
 
 ?>
