@@ -32,7 +32,7 @@ jobs:
     - name: Copy files via SSH
       uses: appleboy/scp-action@v0.1.1
       with:
-        host: 178.128.106.214
+        host: 13.237.250.120
         username: ${{ secrets.SPL_SERVER_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         source: "."
