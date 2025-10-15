@@ -19,7 +19,9 @@ jobs:
         php-version: '7.4'
 
     - name: Run PHP script
-      run: php test.php
+      run: |
+        msg="${{ github.event.head_commit.message }}"
+        php test.php
 
   deploy:
     runs-on: ubuntu-latest
