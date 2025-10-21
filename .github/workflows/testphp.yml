@@ -8,7 +8,7 @@ on:
 
 jobs:
   run_php_script:
-    runs-on: [self-hosted, linux] 
+    runs-on: [self-hosted, windows] 
 
     steps:
     - uses: actions/checkout@v2
